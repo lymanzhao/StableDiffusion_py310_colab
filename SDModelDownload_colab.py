@@ -122,19 +122,19 @@ else:
 if len(basecivitModelsName) != 0:
     for basecivitModelsName in basecivitModelsName:
   
-        cmd = "%cd %s & !aria2c -V -c  %s" %(baseModelsPath,basecivitModelsName)
+        cmd = "%cd %s & !aria2c -V -c  %s" %("%cd",baseModelsPath,basecivitModelsName)
         os.system(cmd)
 if len(basehugModelsName) != 0:
     for basehugModelsName in basehugModelsName:
-        cmd = "%cd %s & !wget -N -c  %s" %(baseModelsPath,basehugModelsName)
+        cmd = "%s %s & !wget -N -c  %s" %("%cd",baseModelsPath,basehugModelsName)
         os.system(cmd)
 if len(loracivitModelsName) != 0:
     for loracivitModelsName in loracivitModelsName:
-        cmd = "%cd %s & !aria2c -V -c  %s" %(loraModelsPath,loracivitModelsName)
+        cmd = "%s %s & !aria2c -V -c  %s" %("%cd",loraModelsPath,loracivitModelsName)
         os.system(cmd)
 if len(lorahugModelsName) != 0:
     for lorahugModelsName in lorahugModelsName:
-        cmd = "%cd %s & !wget -N -c  %s" %(loraModelsPath,lorahugModelsName)
+        cmd = "%s %s & !wget -N -c  %s" %("%cd",loraModelsPath,lorahugModelsName)
         os.system(cmd)
 exit()
 
