@@ -4,6 +4,7 @@ import subprocess
 
 baseModelsPath = Path.joinpath(Path.cwd(),"models/Stable-diffusion")
 loraModelsPath = Path.joinpath(Path.cwd(),"models/Lora")
+Path.mkdir(loraModelsPath)
 print("0.SD 1.5基础模型")
 print("1.chilloumix模型及其他Lora")
 print("2.日式动漫风格")
