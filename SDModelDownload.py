@@ -92,6 +92,7 @@ if selectModel=="3":
     loracivitModelsName=["https://civitai.com/api/download/models/14856",# ## 墨心
                 "https://civitai.com/api/download/models/20143",## 疏可走马1.1
                 "https://civitai.com/api/download/models/20343",# ## 沁彩，水彩风格
+                "https://civitai.com/api/download/models/21656",#hanfu
 
     ]
 else:
