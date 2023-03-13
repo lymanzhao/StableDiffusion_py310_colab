@@ -4,7 +4,7 @@ import subprocess
 
 baseModelsPath = Path.joinpath(Path.cwd(),"models/Stable-diffusion")
 loraModelsPath = Path.joinpath(Path.cwd(),"models/Lora")
-Path.mkdir(loraModelsPath)
+# Path.mkdir(loraModelsPath)
 print("0.SD 1.5基础模型")
 print("1.chilloumix模型及其他Lora")
 print("2.日式动漫风格")
@@ -125,22 +125,22 @@ else:
 if len(basecivitModelsName) != 0:
     for basecivitModelsName in basecivitModelsName:
   
-        cmd = "cd %s & aria2c -V -c  %s" %(baseModelsPath,basecivitModelsName)
+        cmd = "cd %s && aria2c -V -c  %s" %(baseModelsPath,basecivitModelsName)
         # os.system(cmd)
         subprocess.call(cmd, shell=True)
 if len(basehugModelsName) != 0:
     for basehugModelsName in basehugModelsName:
-        cmd = "cd %s & wget -N -c  %s" %(baseModelsPath,basehugModelsName)
+        cmd = "cd %s && wget -N -c  %s" %(baseModelsPath,basehugModelsName)
         # os.system(cmd)
         subprocess.call(cmd, shell=True)
 if len(loracivitModelsName) != 0:
     for loracivitModelsName in loracivitModelsName:
-        cmd = "cd %s & aria2c -V -c  %s" %(loraModelsPath,loracivitModelsName)
+        cmd = "cd %s && aria2c -V -c  %s" %(loraModelsPath,loracivitModelsName)
         # os.system(cmd)
         subprocess.call(cmd, shell=True)
 if len(lorahugModelsName) != 0:
     for lorahugModelsName in lorahugModelsName:
-        cmd = "cd %s & wget -N -c  %s" %(loraModelsPath,lorahugModelsName)
+        cmd = "cd %s && wget -N -c  %s" %(loraModelsPath,lorahugModelsName)
         # os.system(cmd)
         subprocess.call(cmd, shell=True)
 exit()
