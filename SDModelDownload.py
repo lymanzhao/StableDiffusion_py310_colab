@@ -16,8 +16,9 @@ print("0.SD 1.5基础模型")
 print("1.chilloumix模型及其他Lora")
 print("2.日式动漫风格")
 print("3.国画水彩风格")
-print("5.embeddings")
-print(".其他艺术风格")
+print("4.皮克斯3D风格")
+print("5.艺术和混合风格")
+print("其他期待……")
 
 selectModel=input("输入选项:")
 
@@ -114,7 +115,7 @@ if selectModel=="4":
     basecivitModelsName=[
         "https://civitai.com/api/download/models/18617",#pixarStyleModel_v10.safetensors 皮克斯风格 checkpoint
         "https://civitai.com/api/download/models/15236",#deliberate_v2.safetensors 基本模型
-        "https://civitai.com/api/download/models/22528",#ph.d.mix 基本模型
+        "https://civitai.com/api/download/models/22534",#ph.d.mix 基本模型
     ]
     basehugModelsName=[
 
@@ -129,8 +130,29 @@ if selectModel=="4":
     ]
 else:
     pass
-##############################################
 
+##############################################
+# 艺术和混合风格  
+if selectModel=="5":
+
+    basecivitModelsName=["https://civitai.com/api/download/models/18446",# dalcefoPainting_3rd
+
+    ]
+    basehugModelsName=[
+
+    ]
+    lorahugModelsName=["https://huggingface.co/andite/pastel-mix/resolve/main/pastelmix-lora.safetensors",pastelmix-lora
+            
+    ]
+
+    loracivitModelsName=["https://civitai.com/api/download/models/6617",# dalcefoNocopyV2.pt
+             
+
+    ]
+else:
+    pass
+
+##############################################
 
 if len(basecivitModelsName) != 0:
     for basecivitModelsName in basecivitModelsName:
