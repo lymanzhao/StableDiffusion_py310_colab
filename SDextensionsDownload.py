@@ -29,7 +29,7 @@ for extgitName in extgitName:
 
         cmd = "cd %s && git clone %s" %(extbasePath,extgitName)
         subprocess.call(cmd, shell=True)
-exit()
+
 
 #################################################################
 # 下载controlnet Models
@@ -59,6 +59,6 @@ controlnetModels=[
 for controlnetModels in controlnetModels:
     cmd = "cd %s & wget -N -c %s" %(controlnetModelsPath,controlnetModels)
     subprocess.call(cmd, shell=True)
-exit()
+
 
 
