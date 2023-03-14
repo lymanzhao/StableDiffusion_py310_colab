@@ -61,4 +61,17 @@ for controlnetModels in controlnetModels:
     subprocess.call(cmd, shell=True)
 
 
+#####################################################
+# embeddings
+embeddingsPath = Path.joinpath(Path.cwd(),"embeddings")
 
+
+embeddingshugeName=["https://huggingface.co/datasets/gsdf/EasyNegative/resolve/main/EasyNegative.safetensors",# EasyNegative 
+
+    ]
+
+if len(embeddingshugeName) != 0:
+    for embeddingshugeName in embeddingshugeName:
+        cmd = "cd %s && wget -N -c  %s" %(embeddingsPath,embeddingshugeName)
+        # os.system(cmd)
+        subprocess.call(cmd, shell=True)

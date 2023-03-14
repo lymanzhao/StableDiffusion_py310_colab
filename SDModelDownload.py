@@ -4,6 +4,7 @@ import subprocess
 
 baseModelsPath = Path.joinpath(Path.cwd(),"models/Stable-diffusion")
 loraModelsPath = Path.joinpath(Path.cwd(),"models/Lora")
+
 if loraModelsPath.exists():
     print("%s 已经存在" %loraModelsPath)
     pass
@@ -15,7 +16,7 @@ print("0.SD 1.5基础模型")
 print("1.chilloumix模型及其他Lora")
 print("2.日式动漫风格")
 print("3.国画水彩风格")
-print("4.皮克斯3D风格")
+print("5.embeddings")
 print(".其他艺术风格")
 
 selectModel=input("输入选项:")
@@ -106,7 +107,7 @@ if selectModel=="3":
     ]
 else:
     pass
-##############################################
+#########################################################################################
 # 下载3D风格的模型和Lora
 if selectModel=="4":
 
@@ -128,6 +129,8 @@ if selectModel=="4":
     ]
 else:
     pass
+##############################################
+
 
 if len(basecivitModelsName) != 0:
     for basecivitModelsName in basecivitModelsName:
@@ -150,6 +153,7 @@ if len(lorahugModelsName) != 0:
         cmd = "cd %s && wget -N -c  %s" %(loraModelsPath,lorahugModelsName)
         # os.system(cmd)
         subprocess.call(cmd, shell=True)
+
 
 
 
