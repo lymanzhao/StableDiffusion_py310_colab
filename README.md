@@ -1,11 +1,26 @@
 # DF_Ubuntu_py310_colab
-stable-diffusion-webui 在Pythton3.10的环境下，colab的安装脚本。
 
-Ubuntu 20环境的Colab笔记，注意笔记本设置为GPU。
+## 1
+.ipynb 文件用于colab，colab的安装脚本，注意在Colab菜单里面修改/笔记本设置为GPU。
 
-默认直接使用编译好的python 3.10.9，如果要自己编译，可以取消编译部分的注释。
+Colab默认Ubuntu 20环境。
+
+笔记默认直接使用编译好的python 3.10.9，如果要自己编译，可以取消单元格中编译部分的注释。
 
 建议直接运行全部笔记，下载时候选择应用环境的模型。
 
-其中引用的插件和模型下载两个py脚本，可用于Windows环境的自动化，脚本放置在stable-diffusion-webui文件夹下运行就可以。
+## 2
+
+SDextensionsDownload.py，为插件下载更新脚本，笔记中已经使用。同样可以用于Windows环境下，脚本放置在stable-diffusion-webui文件夹下运行就可以。
+
+SDModelDownload.py，为模型下载更新脚本，笔记中已经使用。同样可以用于Windows环境下，脚本放置在stable-diffusion-webui文件夹下运行就可以。
+
+
+## 3
+Windows环境目前没有写自动化部署，因为我用的是WinPython，
+http://winpython.github.io/
+该项目为便携环境，一次部署，复制黏贴就可以，无需重复部署。
+
+winodws重新安装，运行webui.bat的时候，会出现commit hash ＜none＞错误，直接按照提示 git config ……就可以
+https://blog.csdn.net/Xy_G__/article/details/128180356
 
