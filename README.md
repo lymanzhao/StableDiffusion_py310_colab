@@ -5,15 +5,21 @@
 
 Colab默认Ubuntu 20环境。
 
-笔记默认直接使用编译好的python 3.10.9，如果要自己编译，可以取消单元格中编译部分的注释。
+笔记默认直接使用编译好的python 3.10.9，上传在本项目的releases中。
 
-建议直接运行全部笔记，下载时候选择应用环境的模型。
+https://github.com/lymanzhao/DF_Ubuntu_py310_colab/releases
+
+如果要自己编译，可以取消单元格中编译部分的注释。
+
+
 
 ## 2
 
 SDextensionsDownload.py，为插件下载更新脚本，笔记中已经使用。同样可以用于Windows环境下，脚本放置在stable-diffusion-webui文件夹下运行就可以。
 
 SDModelDownload.py，为模型下载更新脚本，笔记中已经使用。同样可以用于Windows环境下，脚本放置在stable-diffusion-webui文件夹下运行就可以。
+
+建议直接运行全部笔记，SDModelDownload.py运行的时候选择应用环境的模型。
 
 
 ## 3
