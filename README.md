@@ -27,6 +27,8 @@ Windows环境目前没有写自动化部署，因为我用的是WinPython，
 http://winpython.github.io/
 该项目为便携环境，一次部署，复制黏贴就可以，无需重复部署。
 
+Windows使用上面脚本，需要安装git for windows、wget for windows、aria2 for windows，并且确认能够在命令行里面运行。
+
 windows重新安装，运行webui.bat的时候，会出现commit hash ＜none＞错误，直接按照提示 git config ……就可以
 https://blog.csdn.net/Xy_G__/article/details/128180356
 
