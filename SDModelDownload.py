@@ -150,7 +150,7 @@ if len(lorahugModelsName) != 0:
         cmd = "cd %s && wget -N -c  %s" %(loraModelsPath,lorahugModelsName)
         # os.system(cmd)
         subprocess.call(cmd, shell=True)
-exit()
+
 
 
 
