@@ -4,7 +4,13 @@ import subprocess
 
 baseModelsPath = Path.joinpath(Path.cwd(),"models/Stable-diffusion")
 loraModelsPath = Path.joinpath(Path.cwd(),"models/Lora")
-# Path.mkdir(loraModelsPath)
+if loraModelsPath.exists():
+    print("%s 已经存在" %loraModelsPath)
+    pass
+else:  
+    Path.mkdir(loraModelsPath)
+
+
 print("0.SD 1.5基础模型")
 print("1.chilloumix模型及其他Lora")
 print("2.日式动漫风格")
@@ -107,6 +113,7 @@ if selectModel=="4":
     basecivitModelsName=[
         "https://civitai.com/api/download/models/18617",#pixarStyleModel_v10.safetensors 皮克斯风格 checkpoint
         "https://civitai.com/api/download/models/15236",#deliberate_v2.safetensors 基本模型
+        "https://civitai.com/api/download/models/22528",#ph.d.mix 基本模型
     ]
     basehugModelsName=[
 
