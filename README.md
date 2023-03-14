@@ -1,5 +1,7 @@
 # DF_Ubuntu_py310_colab
-stable-diffusion-webui 在Pythton3.10的环境下，安装脚本
+stable-diffusion-webui 在Pythton3.10的环境下，colab的安装脚本。
+
+其中引用的插件下载模型py脚本，可用于Windows自动化，脚本放置在stable-diffusion-webui文件夹下运行就可以，用于下载和更新。
 
 Ubuntu 20环境的Colab笔记，注意笔记本设置为GPU。
 
