@@ -35,7 +35,7 @@ for extgitName in extgitName:
 # 下载controlnet Models
 import os
 from pathlib import *
-controlnetModelsPath = Path.joinpath(Path.cwd(),"extensions/sd-webui-controlnet/models")
+controlnetModelsPath = Path.joinpath(Path.cwd(),"extensions/sd-webui-controlnet/models") #/content/stable-diffusion-webui/extensions/sd-webui-controlnet/models
 controlnetModels=[
 "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/control_canny-fp16.safetensors",
 "https://huggingface.co/webui/ControlNet-modules-safetensors/resolve/main/control_depth-fp16.safetensors",
@@ -57,7 +57,7 @@ controlnetModels=[
 ]
 
 for controlnetModels in controlnetModels:
-    cmd = "cd %s & wget -N -c %s" %(controlnetModelsPath,controlnetModels)
+    cmd = "cd %s && wget -N -c %s" %(controlnetModelsPath,controlnetModels)
     subprocess.call(cmd, shell=True)
 
 
