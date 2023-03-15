@@ -73,5 +73,25 @@ embeddingshugeName=["https://huggingface.co/datasets/gsdf/EasyNegative/resolve/m
 if len(embeddingshugeName) != 0:
     for embeddingshugeName in embeddingshugeName:
         cmd = "cd %s && wget -N -c  %s" %(embeddingsPath,embeddingshugeName)
-        # os.system(cmd)
+        subprocess.call(cmd, shell=True)
+#####################################################
+# TEXTUAL INVERSION
+textualinversionPath = Path.joinpath(Path.cwd(),"textual_inversion")
+
+textualinversionshugeName=[ 
+
+    ]
+textualinversioncivitName=[
+    "https://civitai.com/api/download/models/20068",# badhandv4，坏手 
+    "https://civitai.com/api/download/models/19837",# badv3，坏身体
+
+    ]
+
+if len(textualinversionshugeName) != 0:
+    for textualinversionshugeName in textualinversionshugeName:
+        cmd = "cd %s && wget -N -c  %s" %(textualinversionPath,textualinversionshugeName)
+        subprocess.call(cmd, shell=True)
+if len(textualinversioncivitName) != 0:
+    for textualinversioncivitName in textualinversioncivitName:
+        cmd = "cd %s && aria2c -V -c  %s" %(textualinversionPath,textualinversioncivitName)
         subprocess.call(cmd, shell=True)
