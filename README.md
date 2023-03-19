@@ -1,4 +1,4 @@
-# DF_Ubuntu_py310_colab
+# StableDiffsion_py310_colab
 
 ## 1
 .ipynb 文件用于colab，colab的安装脚本，注意在Colab菜单里面修改/笔记本设置为GPU。
