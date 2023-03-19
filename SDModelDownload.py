@@ -18,8 +18,12 @@ print("2.日式动漫风格")
 print("3.国画水彩风格")
 print("4.皮克斯3D风格")
 print("5.故事板和分镜风格")
-print("6.艺术和混合风格")
-print("7.SD 2.1及同类")
+print("6.电影风格")
+print("7.2.5D 混合风格")
+print("8.纯艺术")
+print("9.SD 2.1及同类")
+print("10.科幻风格")
+print("11.训练用基本模型")
 print("可多选，以逗号分隔……")
 
 selectModelclass=input("输入选项:")
@@ -38,11 +42,12 @@ for selectModel in selectModel:
     
         lorahugModelsName=[
                 "https://huggingface.co/Lyman/gwei/resolve/main/gwei_10.safetensors",
-                "https://civitai.com/api/download/models/21656",#hanfu
-                "https://civitai.com/api/download/models/16677",#Cute_girl_mix4
+
         ]
 
         loracivitModelsName=[
+                "https://civitai.com/api/download/models/21656",#hanfu
+                "https://civitai.com/api/download/models/16677",#Cute_girl_mix4
         ]  
         
 
@@ -66,6 +71,7 @@ for selectModel in selectModel:
         loracivitModelsName=["https://civitai.com/api/download/models/9969",#liuyifei_10.safetensors
                     "https://civitai.com/api/download/models/20684",#taiwanDollLikeness_v10.safetensors
                     "https://civitai.com/api/download/models/16677",#Cute_girl_mix4
+                    "https://civitai.com/api/download/models/23250",#breastInClass: Better Bodies，<lora:breastinclassbetter_v141:0.5>
                     "https://civitai.com/api/download/models/21656",#hanfu
                     "https://civitai.com/api/download/models/16576",## epiNoiseoffset_v2.safetensors 史诗风格
                     "https://civitai.com/api/download/models/19770",## Shallow Focus模拟聚焦
@@ -78,6 +84,7 @@ for selectModel in selectModel:
     ##############################################
     # 日式动漫风格
         basecivitModelsName=[
+            "https://civitai.com/api/download/models/7425",#girl,Counterfeit-V2.5
 
         ]
         basehugModelsName=[
@@ -116,7 +123,7 @@ for selectModel in selectModel:
         loracivitModelsName=["https://civitai.com/api/download/models/14856",# ## 墨心
                     "https://civitai.com/api/download/models/20143",## 疏可走马1.1
                     "https://civitai.com/api/download/models/21173",# ## 沁彩，水彩风格 v4
-                    "https://civitai.com/api/download/models/22652",# ## 小人书·连环画 xiaorenshu
+                    "https://civitai.com/api/download/models/25661",# ## 小人书·连环画 xiaorenshu v2
                     "https://civitai.com/api/download/models/21656",#hanfu
 
         ]
@@ -158,6 +165,7 @@ for selectModel in selectModel:
         basehugModelsName=[
             "https://huggingface.co/Sandro-Halpo/SamDoesArt-V3/resolve/main/SamDoesArt-V3.safetensors",#SamDoesArt
             "https://huggingface.co/andite/anything-v4.0/resolve/main/anything-v4.5-pruned.safetensors",#
+            "https://huggingface.co/jinofcoolnes/sammod/resolve/main/samdoartsultmerge.safetensors",#Samdoesarts Ultmerge v1
 
         ]
         lorahugModelsName=[
@@ -168,6 +176,29 @@ for selectModel in selectModel:
                 "https://civitai.com/api/download/models/7804",#"Sam Yang" SamDoesArts (Sam Yang) Style LoRA
                 "https://civitai.com/api/download/models/14533",# “shinkawa youji”
                 "https://civitai.com/api/download/models/23169"#limited palette
+                "https://civitai.com/api/download/models/25729"#jb,Carbon painting
+
+        ]
+    else:
+        pass
+    ####################################################################
+    # 电影风格
+    if selectModel=="6":
+
+        basecivitModelsName=[
+            "https://civitai.com/api/download/models/12763",#The Ally's Mix III: Revolutions
+         
+        ]
+        basehugModelsName=[
+       
+        ]
+        lorahugModelsName=[
+                
+        ]
+
+        loracivitModelsName=[       
+                "https://civitai.com/api/download/models/19770",## Shallow Focus模拟聚焦
+                "https://civitai.com/api/download/models/7804",#"Sam Yang" SamDoesArts (Sam Yang) Style LoRA
 
         ]
     else:
@@ -175,11 +206,11 @@ for selectModel in selectModel:
 
 
     ##############################################
-    # 艺术和混合风格  
-    if selectModel=="6":
+    # 2.5D 混合风格  
+    if selectModel=="7":
 
         basecivitModelsName=[
-            "https://civitai.com/api/download/models/18446",# dalcefoPainting_3rd
+            "https://civitai.com/api/download/models/23558",# dalcefo，dalcefo_painting V4
 
         ]
         basehugModelsName=[
@@ -199,16 +230,87 @@ for selectModel in selectModel:
         ]
     else:
         pass
+    ##############################################
+    # 纯艺术
+    if selectModel=="8":
+
+        basecivitModelsName=[
+            "https://civitai.com/api/download/models/23979",#Oil painting
+
+        ]
+        basehugModelsName=[
+            "https://huggingface.co/dallinmackay/Van-Gogh-diffusion/resolve/main/Van-Gogh-Style-lvngvncnt-v2.ckpt",#lvngvncnt style
+
+        ]
+        lorahugModelsName=[
+      
+        ]
+
+        loracivitModelsName=[    
+
+        ]
+    else:
+        pass
 
     ##############################################
-    # SD 2.1 
-    if selectModel=="7":
+    # 科幻风格
+    if selectModel=="9":
 
         basecivitModelsName=[
             "https://civitai.com/api/download/models/13259",# Illuminati Diffusion
 
         ]
         basehugModelsName=[
+            "https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.safetensors",# SD2.1
+  
+
+        ]
+        lorahugModelsName=[
+           
+                
+        ]
+
+        loracivitModelsName=[
+            
+
+        ]
+    else:
+        pass
+
+    ##############################################
+    # SD 2.1 
+    if selectModel=="10":
+
+        basecivitModelsName=[
+            "https://civitai.com/api/download/models/13259",# Illuminati Diffusion
+
+        ]
+        basehugModelsName=[
+            "https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.safetensors",# SD2.1
+  
+
+        ]
+        lorahugModelsName=[
+           
+                
+        ]
+
+        loracivitModelsName=[
+            
+
+        ]
+    else:
+        pass
+    ##############################################
+    # 训练Training 
+    if selectModel=="11":
+
+        basecivitModelsName=[
+            "https://civitai.com/api/download/models/11732", #chilloutmix_NiPrunedFp16Fix
+
+        ]
+        basehugModelsName=[
+            "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned.safetensors",# SD 1.5
             "https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.safetensors",# SD2.1
   
 

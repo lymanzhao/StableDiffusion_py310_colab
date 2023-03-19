@@ -14,6 +14,7 @@ extgitName=[
             "https://github.com/Mikubill/sd-webui-controlnet",
             "https://github.com/fkunn1326/openpose-editor.git",
             "https://github.com/hnmr293/posex",
+            "https://github.com/d8ahazard/sd_dreambooth_extension",
 
     ]
 
