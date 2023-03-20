@@ -85,10 +85,11 @@ for selectModel in selectModel:
     # 日式动漫风格
         basecivitModelsName=[
             "https://civitai.com/api/download/models/7425",#girl,Counterfeit-V2.5
+            "https://civitai.com/api/download/models/25853",# 
 
         ]
         basehugModelsName=[
-                "https://huggingface.co/andite/anything-v4.0/resolve/main/anything-v4.5-pruned.safetensors",#
+                "https://huggingface.co/andite/anything-v4.0/resolve/main/anything-v4.5-pruned.safetensors",#Animelike 2D
         ]
         lorahugModelsName=[
                 
@@ -186,7 +187,7 @@ for selectModel in selectModel:
     if selectModel=="6":
 
         basecivitModelsName=[
-            "https://civitai.com/api/download/models/12763",#The Ally's Mix III: Revolutions
+            # "https://civitai.com/api/download/models/12763",#The Ally's Mix III: Revolutions
          
         ]
         basehugModelsName=[
