@@ -59,6 +59,7 @@ for selectModel in selectModel:
                     #"https://civitai.com/api/download/models/11745", #chilloutmix_NiPrunedFp32Fix
                     "https://civitai.com/api/download/models/11732", #chilloutmix_NiPrunedFp16Fix
                     "https://civitai.com/api/download/models/22033", #chilled_re-generic_v3
+                    "https://civitai.com/api/download/models/6987", #Realistic Vision V1.3
         ]
         basehugModelsName=[
 
