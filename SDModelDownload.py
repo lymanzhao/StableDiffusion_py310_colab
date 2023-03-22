@@ -58,6 +58,7 @@ for selectModel in selectModel:
         basecivitModelsName=[
                     #"https://civitai.com/api/download/models/11745", #chilloutmix_NiPrunedFp32Fix
                     "https://civitai.com/api/download/models/11732", #chilloutmix_NiPrunedFp16Fix
+                    "https://civitai.com/api/download/models/22033", #chilled_re-generic_v3
         ]
         basehugModelsName=[
 
@@ -66,6 +67,7 @@ for selectModel in selectModel:
                     "https://huggingface.co/Lyman/gwei/resolve/main/gwei_10.safetensors",
                     "https://huggingface.co/Lyman/gwei/resolve/main/archives/japaneseDollLikeness_v10.safetensors",
                     "https://huggingface.co/Lyman/gwei/resolve/main/archives/koreanDollLikeness_v10.safetensors",
+                    "https://huggingface.co/AzureKn1ght/RandomCoser/resolve/main/randomCoserFaceCoser_randomCoserFace.safetensors",# 随机
         ]
 
         loracivitModelsName=["https://civitai.com/api/download/models/9969",#liuyifei_10.safetensors
