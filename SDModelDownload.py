@@ -163,7 +163,7 @@ for selectModel in selectModel:
 
         basecivitModelsName=[
             "https://civitai.com/api/download/models/18446",# dalcefoPainting_3rd
-            
+            "https://civitai.com/api/download/models/27747",# db01,storyboard
             "https://civitai.com/api/download/models/15236",#deliberate_v2
         ]
         basehugModelsName=[
