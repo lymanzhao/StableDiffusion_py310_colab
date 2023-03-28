@@ -13,7 +13,8 @@ else:
 
 
 print("0.SD 1.5基础模型及Lora")
-print("1.chilloumix模型及Lora")
+print("1.chilloumix模型及Coser")
+print("1a.照片")
 print("2.日式动漫风格")
 print("3.国画水彩风格")
 print("4.皮克斯3D风格")
@@ -53,13 +54,12 @@ for selectModel in selectModel:
 
     if selectModel=="1":
     #########################################################################################
-    #真人照片风格
-    #下载chilloumix模型及其他Lora
+  
+    #下载chilloumix模型及其他Coser
         basecivitModelsName=[
-                    #"https://civitai.com/api/download/models/11745", #chilloutmix_NiPrunedFp32Fix
-                    "https://civitai.com/api/download/models/11732", #chilloutmix_NiPrunedFp16Fix
-                    "https://civitai.com/api/download/models/22033", #chilled_re-generic_v3
-                    "https://civitai.com/api/download/models/6987", #Realistic Vision V1.3
+                   "https://civitai.com/api/download/models/11745", #chilloutmix_NiPrunedFp32Fix
+                    #"https://civitai.com/api/download/models/11732", #chilloutmix_NiPrunedFp16Fix
+                    #"https://civitai.com/api/download/models/22033", #chilled_re-generic_v3
         ]
         basehugModelsName=[
 
@@ -74,10 +74,31 @@ for selectModel in selectModel:
         loracivitModelsName=["https://civitai.com/api/download/models/9969",#liuyifei_10.safetensors
                     "https://civitai.com/api/download/models/20684",#taiwanDollLikeness_v10.safetensors
                     "https://civitai.com/api/download/models/16677",#Cute_girl_mix4
+                    "https://civitai.com/api/download/models/27343"# huge/nice,<lora:huge_v2:1>,huge/nice
                     "https://civitai.com/api/download/models/23250",#breastInClass: Better Bodies，<lora:breastinclassbetter_v141:0.5>
                     "https://civitai.com/api/download/models/21656",#hanfu
-                    "https://civitai.com/api/download/models/16576",## epiNoiseoffset_v2.safetensors 史诗风格
-                    "https://civitai.com/api/download/models/19770",## Shallow Focus模拟聚焦
+
+        ]    
+    else:
+        pass
+
+    if selectModel=="1a":
+    #########################################################################################
+    #照片
+    
+        basecivitModelsName=[
+                    
+                    "https://civitai.com/api/download/models/29460", #Realistic Vision V2
+        ]
+        basehugModelsName=[
+
+        ]
+        lorahugModelsName=[
+                  
+        ]
+
+        loracivitModelsName=[
+            "https://civitai.com/models/25446/virtual-buildings",
 
         ]    
     else:
@@ -128,7 +149,7 @@ for selectModel in selectModel:
                     "https://civitai.com/api/download/models/20143",## 疏可走马1.1
                     "https://civitai.com/api/download/models/21173",# ## 沁彩，水彩风格 v4
                     "https://civitai.com/api/download/models/25661",# ## 小人书·连环画 xiaorenshu v2
-                    "https://civitai.com/api/download/models/21656",#hanfu
+                    "https://civitai.com/api/download/models/27946",#hanfu
 
         ]
     else:
@@ -164,7 +185,7 @@ for selectModel in selectModel:
         basecivitModelsName=[
             "https://civitai.com/api/download/models/18446",# dalcefoPainting_3rd
             "https://civitai.com/api/download/models/27747",# db01,storyboard
-            "https://civitai.com/api/download/models/15236",#deliberate_v2
+            #"https://civitai.com/api/download/models/15236",#deliberate_v2
         ]
         basehugModelsName=[
             "https://huggingface.co/Sandro-Halpo/SamDoesArt-V3/resolve/main/SamDoesArt-V3.safetensors",#SamDoesArt
@@ -265,7 +286,7 @@ for selectModel in selectModel:
 
         ]
         basehugModelsName=[
-            "https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.safetensors",# SD2.1
+            #"https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.safetensors",# SD2.1
   
 
         ]

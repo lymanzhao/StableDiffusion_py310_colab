@@ -15,6 +15,8 @@ extgitName=[
             "https://github.com/fkunn1326/openpose-editor.git",
             "https://github.com/hnmr293/posex",
             "https://github.com/d8ahazard/sd_dreambooth_extension",
+            "https://github.com/jexom/sd-webui-depth-lib",
+            "https://github.com/KohakuBlueleaf/a1111-sd-webui-locon",
 
     ]
 
@@ -67,7 +69,11 @@ for controlnetModels in controlnetModels:
 embeddingsPath = Path.joinpath(Path.cwd(),"embeddings")
 
 
-embeddingshugeName=["https://huggingface.co/datasets/gsdf/EasyNegative/resolve/main/EasyNegative.safetensors",# EasyNegative 
+embeddingshugeName=[
+    "https://huggingface.co/datasets/gsdf/EasyNegative/resolve/main/EasyNegative.safetensors",# EasyNegative 
+    "https://civitai.com/api/download/models/5119",# Pure Eros Face
+    "https://civitai.com/api/download/models/20068",# badhandv4，坏手 
+    "https://civitai.com/api/download/models/19837",# badv3，坏身体
 
     ]
 
@@ -85,6 +91,7 @@ textualinversionshugeName=[
 textualinversioncivitName=[
     "https://civitai.com/api/download/models/20068",# badhandv4，坏手 
     "https://civitai.com/api/download/models/19837",# badv3，坏身体
+
 
     ]
 
