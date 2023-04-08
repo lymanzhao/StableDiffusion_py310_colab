@@ -30,6 +30,10 @@ SDModelDownload.py，为模型下载更新脚本，笔记中已经使用。同�
 建议直接运行全部笔记，SDModelDownload.py运行的时候选择应用环境的模型。
 
 
+
+SDTrainingExtensionsDownload.py，分类了专门用于训练的插本。
+
+
 ## 3
 ### for windows
 
