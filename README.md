@@ -33,7 +33,7 @@ SDModelDownload.py，为模型下载更新脚本，笔记中已经使用。同�
 SDcontrolnetExtensionsDownload.py，分类了controlnet安装下载脚本。
 
 
-SDTrainingExtensionsDownload.py，分类了专门用于训练的插本。
+SDTrainingExtensionsDownload.py，分类了专门用于训练的脚本。
 
 
 ## 3
