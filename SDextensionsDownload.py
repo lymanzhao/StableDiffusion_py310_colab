@@ -38,7 +38,7 @@ else:
     Path.mkdir(vaeModelsPath)
 
 vaeModelshugeName=[
-    "https://huggingface.co/stabilityai/sd-vae-ft-ema/resolve/main/diffusion_pytorch_model.safetensors",
+    "https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors",
 ]
 
 if len(vaeModelshugeName) != 0:
