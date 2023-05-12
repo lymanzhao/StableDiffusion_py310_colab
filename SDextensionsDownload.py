@@ -2,8 +2,8 @@ import os
 from pathlib import *
 import subprocess
 
-# os.environ["http_proxy"] = "http://127.0.0.1:7809"
-# os.environ["https_proxy"] = "http://127.0.0.1:7809"
+os.environ["http_proxy"] = "http://127.0.0.1:7890"
+os.environ["https_proxy"] = "http://127.0.0.1:7890"
 
 extbasePath = Path.joinpath(Path.cwd(),"extensions")
 
@@ -11,6 +11,11 @@ extgitName=[
             "https://github.com/kohya-ss/sd-webui-additional-networks",#
             "https://github.com/AlUlkesh/stable-diffusion-webui-images-browser",
             "https://github.com/KohakuBlueleaf/a1111-sd-webui-locon",
+            "https://github.com/Nevysha/Cozy-Nest",
+            "https://github.com/DominikDoom/a1111-sd-webui-tagcomplete",
+            "https://github.com/journey-ad/sd-webui-bilingual-localization",
+            "https://github.com/AbdullahAlfaraj/Auto-Photoshop-StableDiffusion-Plugin",# 安装插件ccx
+
     ]
 
 
@@ -39,6 +44,7 @@ else:
 
 vaeModelshugeName=[
     "https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors",
+    "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/vae/diffusion_pytorch_model.safetensors",
 ]
 
 if len(vaeModelshugeName) != 0:
