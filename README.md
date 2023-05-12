@@ -36,6 +36,11 @@ SDcontrolnetExtensionsDownload.py，分类了controlnet安装下载脚本。
 SDTrainingExtensionsDownload.py，分类了专门用于训练的脚本。
 
 
+SD_fix_git_commit_hash.py,用于修复移动目录以后，hash为空，报错的的情况
+
+
+
+
 ## 3
 ### for windows
 
