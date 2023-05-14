@@ -14,7 +14,7 @@ extgitName=[
             "https://github.com/Nevysha/Cozy-Nest",
             "https://github.com/DominikDoom/a1111-sd-webui-tagcomplete",
             "https://github.com/journey-ad/sd-webui-bilingual-localization",
-            "https://github.com/AbdullahAlfaraj/Auto-Photoshop-StableDiffusion-Plugin",# 安装插件ccx
+            #"https://github.com/AbdullahAlfaraj/Auto-Photoshop-StableDiffusion-Plugin",# 安装插件ccx
 
     ]
 

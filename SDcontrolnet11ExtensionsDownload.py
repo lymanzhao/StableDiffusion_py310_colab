@@ -2,11 +2,14 @@ import os
 from pathlib import *
 import subprocess
 
+os.environ["http_proxy"] = "http://127.0.0.1:7890"
+os.environ["https_proxy"] = "http://127.0.0.1:7890"
+
 extbasePath = Path.joinpath(Path.cwd(),"extensions")
 
 extgitName=[
             "https://github.com/Mikubill/sd-webui-controlnet",
-            "https://github.com/jexom/sd-webui-depth-lib",
+            #"https://github.com/jexom/sd-webui-depth-lib",
             "https://github.com/nonnonstop/sd-webui-3d-open-pose-editor",
     ]
 
