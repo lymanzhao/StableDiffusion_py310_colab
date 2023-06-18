@@ -53,3 +53,8 @@ Windows使用上面脚本，需要安装git for windows、wget for windows、ari
 windows重新安装，运行webui.bat的时候，会出现commit hash ＜none＞错误，直接按照提示 git config …… 就可以解决
 https://blog.csdn.net/Xy_G__/article/details/128180356
 
+
+winpythonPrompt.reg
+winpython注册表，可以右键唤出命令行环境，注意编辑里面的路径跟你实际路径一致。
+
+
